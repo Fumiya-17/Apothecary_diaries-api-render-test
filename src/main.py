@@ -43,7 +43,7 @@ with app.app_context():
 # Route
 @app.route('/')
 def home(): 
-    return jsonify({'message': 'Welcome to the Apothecary Diaries API :3'})
+    return jsonify({'message': 'Welcome to the Apothecary Diaries API :3 access /characters to see all characters'})
 
 @app.route('/characters', methods=['GET'])
 def get_characters():
